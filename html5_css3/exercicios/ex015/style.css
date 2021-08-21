@@ -1,0 +1,15 @@
+@charset "UTF-8"; /*evitar problemas com acentuação*/
+body{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif]m , Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: lightblue;
+    background-color: darkblue;
+}
+h2{
+    color: lightcoral;
+    background-color: darkred;
+}
+</style> /*css local*/ 

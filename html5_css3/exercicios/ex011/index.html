@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture><!--é parecida com a tag img, porém ela permite que vários sources (fontes) sejam criados-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--(max-width:1000px)o tamanho máximo da imagem é de 1000px, caso o navegador seja menor que isso a imagem que carregará será outra (imagens/foto-m.png)-->
+        <!--A ordem dos sources importa, eles devem estar em ordem crescente (da menor imagem para a imagem padrão, que é a maior)-->
+        <img src="imagens/foto-g.png" alt="foto flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/Night Run Away - An Jone.mp3" controls autoplay><!--Para que o áudio funcione é necessário usar parâmetros como o controls(mostra o controle de áudio) e o autoplay(reproduz o áudio assim que a página pe carregada)-->
+    <!--Muitos navegatores não possuem total compatibilidade com os formatos de áudio (MP3,WAV e OGG são compatíveis a maioria)-->
+    </audio><!--limitado-->
+    <audio preload="metadata" autoplay controls loop><!--Preload : auto - a página só carregará quando o áudio inteiro carregar (site lento), metadata - carrega algumas informações básicas do áudio (site ok), none - não carrega nada até o play ser apertado -->
+    <!--loop faz o áudio repetir sempre que acabar (não recomendado)-->
+        <source src="midia/Night Run Away - An Jone.mp3" type="audio/mpeg">
+        <source src="midia/Night Run Away - An Jone.ogg" type="audio/ogg">
+        <source src="midia/Night Run Away - An Jone.wav" type="audio/wav"><!--boa qualidade porém muito pesado (não recomendado)-->
+        <p>Infelizmente o seu navegador não consegue reproduzir o áudio</p><a href="midia/Night Run Away - An Jone.mp3" download="Night Run Away.mp3" type="audio/mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio><!--Neste caso é necessário ter o áudio salvo de todos os três formatos acima (MP3,OGG e WAV), para que assim o navegador tenha mais opções de compatibilidade-->
+    <!--Como já dito antes, a ordem dos sources no código importa, sendo assim o navegador tentará carregar os áudios na ordem em que eles estão (caso o MP3 não seja compatível, o navegador tentará usar o OGG e assim em diante)-->
+</body>
+</html>

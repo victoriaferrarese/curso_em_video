@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(233, 188, 233);
+        }
+        header{
+            background-color: rgb(162, 85, 235);
+            padding : 10px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 3px rgba(82, 50, 82, 0.795); /* right - bottom - espalhamento - color */
+            /* ctrl + shift + i - */
+        }
+        nav > a{
+            margin-left: 80px;
+            margin-right: 10px;
+            text-align: center;
+            color: white;
+        }
+        nav > a:hover{
+            text-decoration: none;
+        }
+        h2{
+            text-align: center;
+        }
+        main{
+            outline: 5px dashed yellow;
+            background-color: #ffffff;
+            padding: 10px;
+            margin: auto;
+        }
+        article{
+            background-color: rgb(238, 218, 238);
+            padding: 3px;
+        }
+        footer{
+            background-color: rgb(162, 85, 235);
+            padding: 1px;
+            margin: 20px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body> <!-- grouping tags semânticas ("divs" semanticas) -->
+    <header> <!-- cabeçalho -->
+        <nav> <!-- área que possui os links internos-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- conteúdo principal -->
+        <section id="assuntos"> <!-- seções da página -->
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2> Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolore incidunt natus quod aperiam iusto culpa quae. Exercitationem, excepturi temporibus! Quod voluptates, officia tenetur laudantium consequatur voluptatem magni iusto accusamus.</p>
+                <aside> <!-- conteúdo periférico ao artigo -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer> <!-- rodapé -->
+        <p>Desenvolvido por Victoria Ferrarese</p>
+    </footer>
+</body>
+</html>

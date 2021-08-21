@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!--Link externo aponta para outro site-->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.gitbub.io/" >repositório público no github</a></p> <!--href = hypertext reference-->
+   <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo">canal gratuito no youtube</a></p>
+    <!--Nesse caso o link fica sobreposto ao meu site e ao acessa-lo o usuário sai do meu site e vai para o site do link-->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.gitbub.io/" target="_blank" rel="external">repositório público no github</a></p> <!--target(alvo)="_blanket"(janela em branco)--> <!--rel(relativo a)="external"(link do tipo externo)-->
+   <p>Você também pode acessar o meu <a href="https://www.youtube.com/watch?v=LeLnlT-ZKw8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=28" target="_blank" rel="external">canal gratuito no youtube</a></p>
+    <!--Agora ao acessar o link externo no meu site, ele será aberto em uma nova aba, mantendo meu site aberto na guia original-->
+    <h1>Usando links internos</h1> <!--Link interno faz relação com outra página que está no mesmo servidor e diz respeito a mesma página-->
+    <p>Esta é a primeira página do site, se você quiser pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página </a></p> <!--rel="next":Para que os dois arquivos(páginas) entrem em contato uma com a outra elas devem estar na mesma pasta-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self">página de notícias</a> </p>
+    <h1>Link para download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.html" type="application/pdf">Baixar pdf aula 10</a></li><!--href deve apontar para a pasta em que o arquivo que será baixado esta, o atributo download deve ter como valor o nome do arquivo a ser baixado e o atributo type indica ao navegador o formato do arquivo(pdf,zip,html,css...)-->
+        <li><a href="livro/09 - Listas HTML.pdf" download="Listas HTML" type="application/html">Baixar pdf aula 09</a></li>
+    </ul>
+
+
+</body>
+</html>

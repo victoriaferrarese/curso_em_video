@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+         /* Essa safe combination ( mais que uma opção de fonte ) é muito importânte pois há a possibilidade do computador não encontrar a primeira fonte requisitada e utilizar a próxima*/
+        /*CSS web safe font combinations - w3school*/
+        /* font-family: sans-serif; - todos os dispositivos conseguem ler as familias das fontes (ctrl + espaço) - */
+            font-size: 1em;
+        /* Medidas Absolutas : cm, mm, in (polegada), px, pt(ponto), pc*/
+        /* Medidas relativas : em(tamanho atual da fonte), ex(tamanho relativo a altura x de uma fonte), rem, vw(porcentagem da largura da viewport-tela-), vh(altura da viewport), % */
+        /* Recomendações da W3C = px e em */
+        /* Tamanho padrão da fonte = 16px ~= 1em */
+        font-weight: bold;
+        /* Peso da fonte = lighter, normal, bold, bolder*/
+        font-style: italic;
+        text-decoration: underline;
+        /* A maioria das familias não permitem alterações no font-style e no text-decoration*/
+        }
+        h1{
+            font-family: 'Work sans',sans-serif ;
+            font-weight: bolder;
+            font-variant: unset;
+            font-size: 2em;
+            font-style: italic;
+            /* Essas propriedades das declaraçôes sâo as principais*/
+            /* Ordem do shorthand font: font-style - font-weight - font-size - font-family */
+            font: italic bold 2em sans-serif, helvetica;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore porro harum fugiat perferendis quod sit reiciendis vero soluta ullam quisquam praesentium modi ducimus cum, dolore alias error ipsum unde nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore porro harum fugiat perferendis quod sit reiciendis vero soluta ullam quisquam praesentium modi ducimus cum, dolore alias error ipsum unde nostrum!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore porro harum fugiat perferendis quod sit reiciendis vero soluta ullam quisquam praesentium modi ducimus cum, dolore alias error ipsum unde nostrum!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aperiam consequatur nesciunt, eius dolores voluptate aut sit, natus molestiae voluptatibus perferendis labore perspiciatis blanditiis qui animi adipisci vel placeat reiciendis.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam! Explicabo, enim quae earum minus cumque facilis, distinctio aut ipsa ullam voluptas reiciendis temporibus, quisquam commodi! In nisi deleniti necessitatibus.</p>
+
+</body>
+</html>
